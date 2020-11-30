@@ -1,0 +1,104 @@
+
+  
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%; 
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 850px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  .h5
+  {
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      justify-content: center;
+      align-items:center ;
+  }  
+  .modal-body
+  {
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      justify-content: center;
+      align-items:center ;
+  }  
+
+  .image img
+{
+    
+    width: 110px;
+     
+}
+.image
+{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items:center ;
+}
+.btn-info { 
+    background: #92c7eb;
+    background-image: url(.../../../../assets/addbook.png);
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    line-height: 12px; 
+    width: 48px;
+    height: 48px; 
+    font-size: 8pt; 
+    font-family: tahoma; 
+    margin-top: 1px; 
+    margin-right: 2px; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+   }
+  .media img {
+    border:1px solid #ddd;
+    padding:5px;
+    border-radius:2px;
+    background:#fff;
+    max-width:200px;
+  }
+  
+  .media img {width:100%;display:block;}
+
+  .btn-group { 
+    position:relative; 
+    right: 315px; 
+
+ 
+
+   }
