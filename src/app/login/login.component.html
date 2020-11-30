@@ -1,10 +1,3 @@
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-</head>
 
 <body>
   <div class="wrapper fadeInDown mt-5">
@@ -15,17 +8,16 @@
       <div class="mmmm"><img src="../assets/person.png" alt=""></div>
 
       <form id="form-autenticacion">
-        <input type="text" id="Nombre" class="fadeIn second" name="login" placeholder="Nombre de usuario">
+        <input type="text" id="username" class="fadeIn second" name="username" placeholder="Nombre de usuario">
 
-        <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
+        <input type="password" id="password" class="fadeIn third" name="password"placeholder="password">
 
         <input type="submit" [routerLink]="['/inicio']" class="mt-3 fadeIn fourth" value="Entrar">
-        <!--<input type="submit"   class="mt-1 fadeIn fourth" value="Iniciar Sesion con Google">-->
 
       </form>
 
       <div id="formFooter">
-        <a class="mt-1 underlineHover" href="#">Register</a>
+        <a class="mt-1 underlineHover" data-toggle="modal" data-target="#agregando">Register</a>
       </div>
 
     </div>
@@ -33,4 +25,26 @@
   </div>
 </body>
 
-</html>
+<div class="modal fade" id="agregando" tabindex="-1" aria-labelledby="agregandoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Agregando Usuarios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+
+              <input type="text" id="NombreOtitulo" class="form-control" name="NombreOtitulo" placeholder="Usuario">
+      
+              <input type="text" id="pasword" class="form-control" name="password" placeholder="Contraseña"> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

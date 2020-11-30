@@ -2,8 +2,6 @@
 <app-nvar></app-nvar>
 <!--Fin Nvar-->
 
-<body class="fondo">
-  
 <!--body-->
   <div class="wrapper fadeInDown mt-5">
 
@@ -11,50 +9,24 @@
       <button type="button" class="btn btn-info btn-sm" id="mo" data-toggle="modal" data-target="#agregando"></button>
       <br>
       <br>
-      <hr>
       <div id="Layer1" style="width:850px; height:330px; overflow-y: scroll;">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-primary">
-            <input type="radio" name="options" id="option1" (click)="cargarDatos(libro)" data-toggle="modal" data-target="#ventana"> Editar</label>
-          <label class="btn btn-danger">
-            <input type="radio" name="options" id="option2"> Eliminar</label>
-        </div>
-          <br>
-          <br>
-        <div class="media" style="width:830px; height:330px;" >
-          <img id="med" src="{{libro.string}}" class="align-self-start mr-3">
-
-          <tbody *ngFor="let libro of libro; let i = index">
-            <tr class="text-center"></tr>
-          <div class="media-body">
-            <h1>{{libro.id}}</h1>
-            <h1 class="mt-0">{{libro.name}}</h1>
-            <h6>{{libro.price}}</h6> 
-            <h6>{{libro.agepublic}}</h6>
-            <h6 align="left">Descripcion:</h6>
-            <p align="right">libro.description</p>
-     
-             </div>
-            </tbody>
-        </div>
+        
     </div>
     </div>
   </div>
   <!--Fin body-->
-</body>
 
 
 
 
 
 
-
-<!-- Modal -->
+<!-- Modal agregar -->
 <div class="modal fade" id="agregando" tabindex="-1" aria-labelledby="agregandoLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Agregando Libro</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Agregando Usuarios</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -62,25 +34,38 @@
       <div class="modal-body">
         
 
-              <input type="text" id="NombreOtitulo" class="form-control" name="NombreOtitulo" placeholder="Titulo o nombre del libro">
+              <input type="text" id="NombreOtitulo" class="form-control" name="NombreOtitulo" placeholder="Usuario">
       
-              <input type="text" id="Autor" class="form-control" name="Autor" placeholder="Autor">
-      
-              <input type="text" id="Precio" class="form-control" name="Precio" placeholder="Precio">
-      
-              <input type="text" class="form-control" id="año" name="año" placeholder="Año de publicacion">
-              
-              <textarea class="form-control" id="message-text" placeholder="Descripcion"></textarea>
-      
-              <!--<input type="file" class="form-control-file" id="fileimage">-->
-          <!--Agregando imagen y previsualizando-->    
-          <input id="file" type="file" />
-          <br>
-          <!----->                   
+              <input type="text" id="pasword" class="form-control" name="password" placeholder="Contraseña"> 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button class="btn btn-info btn-lg btn-block"  (click)="agregarlibro()" type="submit">Add libro</button>
+        <button type="button" class="btn btn-primary">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fin modal-->
+<!-- Modal editar -->
+<div class="modal fade" id="editando" tabindex="-1" aria-labelledby="editandoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Editando Usuarios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+
+        <input type="text" id="NombreOtitulo" class="form-control" name="NombreOtitulo" placeholder="Nuevo Usuario">
+      
+        <input type="text" id="pasword" class="form-control" name="password" placeholder="Nueva Contraseña">                   
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add</button>
       </div>
     </div>
   </div>

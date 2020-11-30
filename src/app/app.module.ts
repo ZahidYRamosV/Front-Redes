@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NvarComponent } from './nvar/nvar.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +13,10 @@ import { ModalComponent } from './modal/modal.component';
     LoginComponent,
     NvarComponent,
     InicioComponent,
-    ModalComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
